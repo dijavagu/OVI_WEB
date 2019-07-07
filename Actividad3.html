@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OVI Web</title>
+<link href="CSS/estilo.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+    	<nav id="menuTop">
+        	<ul>
+            	<li class="nivel1"><a href="Index.html">Inicio</a></li>
+                <li class="nivel1"><a href="">Lecturas</a>
+                	<ul>
+                    	<a href="Lectura1.html"><li class="nivel2">Creando RepositoriosGIT y GITHUB</li></a>
+                        <a href="Lectura2.html"><li class="nivel2">Estilos con CSS3</li></a>
+                        <a href="Lectura3.html"><li class="nivel2">Estructura Basica de HTML5</li></a>
+                        <a href="Lectura4.html"><li class="nivel2">Contenido Multimedia HTML5</li></a>
+                        <a href="Lectura5.html"><li class="nivel2">Trucos con CSS3</li></a>
+                	</ul>
+                </li>
+                <li class="nivel1"><a href="">Multimedia</a>
+                	<ul>
+                    	<a href="Multimedia1.html"><li class="nivel2">QUE ES HTML5?</li></a>
+                        <a href="Multimedia2.html"><li class="nivel2">QUE ES GIT Y GITHUB</li></a>
+                    </ul>
+                </li>
+                <li class="nivel1"><a href="">Actividades</a>
+                	<ul>
+                    	<a href="Actividad1.html"><li class="nivel2">Preguntas Sobre HTML5</li></a>
+                        <a href="Actividad2.html"><li class="nivel2">Preguntas Sobre CSS3</li></a>
+                        <a href="Actividad3.html"><li class="nivel2">Preguntas Sobre GIT/GITHUB</li></a>
+                    </ul>
+                </li>
+                <li class="nivel1"><a href="Autores.html">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    
+    <h3>
+     Preguntas Sobre GIT/GITHUB
+</h3>
+
+Estas preguntas tratan sobre tema de GIT/GITHUB, Respondelas y adquiere tu conocimiento sobres esta herramienta de la WEB.
+<br>
+    <br>
+<script type="text/javascript">
+            var corr = ['a', 'b', 'c', 'd', 'c', 'd', 'c', 'b', 'c', 'b'];
+var niv = {2 : 'Bajo', 5 : 'Medio', 10 : 'Avanzado'}
+function fnc() { 
+var aciertos = 0;
+var radio_checked = -1;
+for(var j = 0, rad = document.getElementsByTagName('input'); j < rad.length-1; j++){
+if(rad[j].checked) {
+radio_checked++;
+if (rad[j].value == corr[radio_checked]) {
+document.getElementById(rad[j].parentNode.id).style.backgroundColor = '#9BFFA0';
+aciertos++;
+} else {
+document.getElementById(rad[j].parentNode.id).style.backgroundColor = '#FF8C8C';
+}
+}
+}
+document.getElementById('nivel').innerHTML = 'Nivel de Conocimiento: ' + niv[aciertos];
+}
+        </script>
+        
+        <form>
+                            <label for="p1" id="rad0" style="align-content: center">
+                                1.¿Elementos basicos de un Sistema de versiones?
+                                <input name="p1" type="radio" value="a"/>
+                                a
+                                <input name="p1" type="radio" value="b"/>
+                                b
+                                <input name="p1" type="radio" value="c"/>
+                                c
+                                <input name="p1" type="radio" value="d"/>
+                                d
+                                <br>
+                                    <p>
+                                        a.)STORAGE, DATA HISTORY, REPORTS
+                                    </p>
+                                    <br>
+                                        <p>
+                                            b.)STORAGE, DATA HISTORY, SSH
+                                        </p>
+                                        <br>
+                                            <p>
+                                                c.)DATA HISTORY, SSH, DB
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    d.)DATA HISTORY, SSH, NUBE
+                                                </p>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </br>
+                            </label>
+                            <br/>
+                            <label for="p2" id="rad1">
+                                2.¿Qué sistema operativo se construyo GIT?
+                                <input name="p2" type="radio" value="a"/>
+                                a
+                                <input name="p2" type="radio" value="b"/>
+                                b
+                                <input name="p2" type="radio" value="c"/>
+                                c
+                                <input name="p2" type="radio" value="d"/>
+                                d
+                                <br>
+                                    <p>
+                                        a.)WIN
+                                    </p>
+                                    <br>
+                                        <p>
+                                            b.)LINUX
+                                        </p>
+                                        <br>
+                                            <p>
+                                                c.)SOLARIS
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    d.):MAC
+                                                </p>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </br>
+                            </label>
+                            <br>
+                                <label for="p3" id="rad2">
+                                    3.¿Estado de archivo para ser tranferido al repositorio de la WEB ?
+                                    <input name="p3" type="radio" value="a"/>
+                                    a
+                                    <input name="p3" type="radio" value="b"/>
+                                    b
+                                    <input name="p3" type="radio" value="c"/>
+                                    c
+                                    <input name="p3" type="radio" value="d"/>
+                                    d
+                                    <br>
+                                        <p>
+                                            a.)MODIFIED
+                                        </p>
+                                        <br>
+                                            <p>
+                                                b.)STAGED
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    c.)COMMITED
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        d.)DELETE
+                                                    </p>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </label>
+                                <br/>
+                                <label for="p4" id="rad3">
+                                    4.¿Estado de los archivos que no estan guardados pero modificados?
+                                    <input name="p4" type="radio" value="a"/>
+                                    a
+                                    <input name="p4" type="radio" value="b"/>
+                                    b
+                                    <input name="p4" type="radio" value="c"/>
+                                    c
+                                    <input name="p4" type="radio" value="d"/>
+                                    d
+                                    <br>
+                                        <p>
+                                            a.)SAVED
+                                        </p>
+                                        <br>
+                                            <p>
+                                                b.)STAGED
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    c.)COMMITED
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        d.)MODIFIED
+                                                    </p>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </label>
+                                <br>
+                                    <label for="p5" id="rad4">
+                                        5.¿Estado de los archivos que se encuentran en un area intermedia?
+                                        <input name="p5" type="radio" value="a"/>
+                                        a
+                                        <input name="p5" type="radio" value="b"/>
+                                        b
+                                        <input name="p5" type="radio" value="c"/>
+                                        c
+                                        <input name="p5" type="radio" value="d"/>
+                                        d
+                                        <br>
+                                            <p>
+                                                a.)MODIFIED
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    b.)SAVED
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        c.)STAGED
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            d.)COMMITED
+                                                        </p>
+                                                    </br>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </label>
+                                    <br>
+                                        <label for="p6" id="rad5" style="align-content: center">
+                                            6.¿Repositorio GITHUB es una plataforma de tipo?
+                                            <input name="p6" type="radio" value="a"/>
+                                            a
+                                            <input name="p6" type="radio" value="b"/>
+                                            b
+                                            <input name="p6" type="radio" value="c"/>
+                                            c
+                                            <input name="p6" type="radio" value="d"/>
+                                            d
+                                            <br>
+                                                <p>
+                                                    a.)BUSQUEDA
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        b.)ALMACENAMIENTO
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            c.)SEGURIDAD
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                d.)DESARROLLO COLABORATIVO
+                                                            </p>
+                                                        </br>
+                                                    </br>
+                                                </br>
+                                            </br>
+                                        </label>
+                                        <br/>
+                                        <label for="p7" id="rad6">
+                                            7.¿GITHUB su funcion principal es mantener?
+                                            <input name="p7" type="radio" value="a"/>
+                                            a
+                                            <input name="p7" type="radio" value="b"/>
+                                            b
+                                            <input name="p7" type="radio" value="c"/>
+                                            c
+                                            <input name="p7" type="radio" value="d"/>
+                                            d
+                                            <br>
+                                                <p>
+                                                    a.)SEGURIDAD EN LOS DATOS
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        b.)COPIAS DE RESPALDO
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            c.)CONTROL DE VERSIONES
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                d.)SINCRONIZACION DE DATOS
+                                                            </p>
+                                                        </br>
+                                                    </br>
+                                                </br>
+                                            </br>
+                                        </label>
+                                        <br>
+                                            <label for="p8" id="rad7">
+                                                8.¿los codigos fuentes de proyectos se almacenan de forma?
+                                                <input name="p8" type="radio" value="a"/>
+                                                a
+                                                <input name="p8" type="radio" value="b"/>
+                                                b
+                                                <input name="p8" type="radio" value="c"/>
+                                                c
+                                                <input name="p8" type="radio" value="d"/>
+                                                d
+                                                <br>
+                                                    <p>
+                                                        a.)PRIVADA Y CERRADA
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            b.)PUBLICA Y PRIVADA
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                c.)PUBLICA Y CUENTA DE PAGO
+                                                            </p>
+                                                            <br>
+                                                                <p>
+                                                                    d.)CUENTA DE PAGO Y CERRADA
+                                                                </p>
+                                                            </br>
+                                                        </br>
+                                                    </br>
+                                                </br>
+                                            </label>
+                                            <br/>
+                                            <label for="p9" id="rad8">
+                                                9.¿Accion donde se multiplica un repositorio?
+                                                <input name="p9" type="radio" value="a"/>
+                                                a
+                                                <input name="p9" type="radio" value="b"/>
+                                                b
+                                                <input name="p9" type="radio" value="c"/>
+                                                c
+                                                <input name="p9" type="radio" value="d"/>
+                                                d
+                                                <br>
+                                                    <p>
+                                                        a.)COPIAR
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            b.)PEGAR
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                c.)CLONAR
+                                                            </p>
+                                                            <br>
+                                                                <p>
+                                                                    d.)DESCARGAR
+                                                                </p>
+                                                            </br>
+                                                        </br>
+                                                    </br>
+                                                </br>
+                                            </label>
+                                            <br>
+                                                <label for="p10" id="rad9">
+                                                    10¿Es un repositorio donde se guarda un cambio despues del Commit?
+                                                    <input name="p10" type="radio" value="a"/>
+                                                    a
+                                                    <input name="p10" type="radio" value="b"/>
+                                                    b
+                                                    <input name="p10" type="radio" value="c"/>
+                                                    c
+                                                    <input name="p10" type="radio" value="d"/>
+                                                    d
+                                                    <br>
+                                                        <p>
+                                                            a.)LOCAL
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                b.)REMOTO
+                                                            </p>
+                                                            <br>
+                                                                <p>
+                                                                    c.)DE BASE DE DATOS
+                                                                </p>
+                                                                <br>
+                                                                    <p>
+                                                                        d.)DE SSH
+                                                                    </p>
+                                                                </br>
+                                                            </br>
+                                                        </br>
+                                                    </br>
+                                                </label>
+                                                <div id="nivel">
+                                                </div>
+                                                <input onclick="fnc()" type="button" value="comprobar"/>
+                                                <br/>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </br>
+                            </br>
+                        </form>
+
+</body>
+</html>

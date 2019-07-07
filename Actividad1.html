@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>OVI Web</title>
+<link href="CSS/estilo.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+	<header>
+    	<nav id="menuTop">
+        	<ul>
+            	<li class="nivel1"><a href="Index.html">Inicio</a></li>
+                <li class="nivel1"><a href="">Lecturas</a>
+                	<ul>
+                    	<a href="Lectura1.html"><li class="nivel2">Creando RepositoriosGIT y GITHUB</li></a>
+                        <a href="Lectura2.html"><li class="nivel2">Estilos con CSS3</li></a>
+                        <a href="Lectura3.html"><li class="nivel2">Estructura Basica de HTML5</li></a>
+                        <a href="Lectura4.html"><li class="nivel2">Contenido Multimedia HTML5</li></a>
+                        <a href="Lectura5.html"><li class="nivel2">Trucos con CSS3</li></a>
+                	</ul>
+                </li>
+                <li class="nivel1"><a href="">Multimedia</a>
+                	<ul>
+                    	<a href="Multimedia1.html"><li class="nivel2">QUE ES HTML5?</li></a>
+                        <a href="Multimedia2.html"><li class="nivel2">QUE ES GIT Y GITHUB</li></a>
+                    </ul>
+                </li>
+                <li class="nivel1"><a href="">Actividades</a>
+                	<ul>
+                    	<a href="Actividad1.html"><li class="nivel2">Preguntas Sobre HTML5</li></a>
+                        <a href="Actividad2.html"><li class="nivel2">Preguntas Sobre CSS3</li></a>
+                        <a href="Actividad3.html"><li class="nivel2">Preguntas Sobre GIT/GITHUB</li></a>
+                    </ul>
+                </li>
+                <li class="nivel1"><a href="Autores.html">Autores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <br>
+    
+    <h3>
+     Preguntas Sobre HTML5
+</h3>
+
+Estas preguntas tratan sobre tema de HTML5 y CSS3, Respondelas y adquierte tu conocimiento sobres estas herramientas de la WEB.
+<br>
+    <br>
+<script type="text/javascript">
+            var corr = ['c', 'b', 'c', 'd', 'a', 'b', 'c', 'c', 'd', 'c'];
+var niv = {2 : 'Bajo', 5 : 'Medio', 10: 'Avanzado'}
+function fnc() { 
+var aciertos = 0;
+var radio_checked = -1;
+for(var j = 0, rad = document.getElementsByTagName('input'); j < rad.length-1; j++){
+if(rad[j].checked) {
+radio_checked++;
+if (rad[j].value == corr[radio_checked]) {
+document.getElementById(rad[j].parentNode.id).style.backgroundColor = '#9BFFA0';
+aciertos++;
+} else {
+document.getElementById(rad[j].parentNode.id).style.backgroundColor = '#FF8C8C';
+}
+}
+}
+document.getElementById('nivel').innerHTML = 'Nivel de Conocimiento: ' + niv[aciertos];
+}
+        </script>
+
+<form>
+                            <label for="p1" id="rad0" style="align-content: center">
+                                1.¿Cual es la etiqueta que da espacio entre parrafos y lineas en HTML5?
+                                <input name="p1" type="radio" value="a"/>
+                                a
+                                <input name="p1" type="radio" value="b"/>
+                                b
+                                <input name="p1" type="radio" value="c"/>
+                                c
+                                <input name="p1" type="radio" value="d"/>
+                                d
+                                <br>
+                                    <p>
+                                        a.)LU
+                                    </p>
+                                    <br>
+                                        <p>
+                                            b.)LI
+                                        </p>
+                                        <br>
+                                            <p>
+                                                c.)BR
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    d.)TD
+                                                </p>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </br>
+                            </label>
+                            <br/>
+                            <label for="p2" id="rad1">
+                                2. uno de estos items es un elemento Semantico de HTML5:
+                                <input name="p2" type="radio" value="a"/>
+                                a
+                                <input name="p2" type="radio" value="b"/>
+                                b
+                                <input name="p2" type="radio" value="c"/>
+                                c
+                                <input name="p2" type="radio" value="d"/>
+                                d
+                                <br>
+                                    <p>
+                                        a.)HTML5
+                                    </p>
+                                    <br>
+                                        <p>
+                                            b.)NAV
+                                        </p>
+                                        <br>
+                                            <p>
+                                                c.)JAVA
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    d.)SCRIPT
+                                                </p>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </br>
+                            </label>
+                            <br>
+                                <label for="p3" id="rad2">
+                                    3. ¿Formato de video  mas popular que soporta todos los navegadores ?
+                                    <input name="p3" type="radio" value="a"/>
+                                    a
+                                    <input name="p3" type="radio" value="b"/>
+                                    b
+                                    <input name="p3" type="radio" value="c"/>
+                                    c
+                                    <input name="p3" type="radio" value="d"/>
+                                    d
+                                    <br>
+                                        <p>
+                                            a.)MP3
+                                        </p>
+                                        <br>
+                                            <p>
+                                                b.)MVW
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    c.)MP4
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        d.)OVI
+                                                    </p>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </label>
+                                <br/>
+                                <label for="p4" id="rad3">
+                                    4. Elemento Semantico  que encierra una nota, consejo  o una explicacion en la pagina?
+                                    <input name="p4" type="radio" value="a"/>
+                                    a
+                                    <input name="p4" type="radio" value="b"/>
+                                    b
+                                    <input name="p4" type="radio" value="c"/>
+                                    c
+                                    <input name="p4" type="radio" value="d"/>
+                                    d
+                                    <br>
+                                        <p>
+                                            a.)NAV
+                                        </p>
+                                        <br>
+                                            <p>
+                                                b.)FOOTER
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    c.)SECTION
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        d.)ASIDE
+                                                    </p>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </label>
+                                <label for="p5" id="rad4">
+                                    5. Elemento que me ayuda a colocar comentarios o comentariar codigo en HTML
+                                    <input name="p5" type="radio" value="a"/>
+                                    a
+                                    <input name="p5" type="radio" value="b"/>
+                                    b
+                                    <input name="p5" type="radio" value="c"/>
+                                    c
+                                    <input name="p5" type="radio" value="d"/>
+                                    d
+                                    <br>
+                                        <p>
+                                            a.) < !-- -- >
+                                        </p>
+                                        <br>
+                                            <p>
+                                                b.)/* */
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    c.)// \\
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        d.)--  --
+                                                    </p>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </label>
+                                <label for="p6" id="rad5">
+                                    6. ¿ Que elemento utilizamos para insertar un video en HTML5?
+                                    <input name="p6" type="radio" value="a"/>
+                                    a
+                                    <input name="p6" type="radio" value="b"/>
+                                    b
+                                    <input name="p6" type="radio" value="c"/>
+                                    c
+                                    <input name="p6" type="radio" value="d"/>
+                                    d
+                                    <br>
+                                        <p>
+                                            a.) FILM
+                                        </p>
+                                        <br>
+                                            <p>
+                                                b.)VIDEO
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    c.)YOUTUBE
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        d.)SOURCE
+                                                    </p>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </label>
+                                <br>
+                                    <label for="p7" id="rad6">
+                                        7. ¿ Que elemento utilizamos para insertar un audio en HTML5?
+                                        <input name="p7" type="radio" value="a"/>
+                                        a
+                                        <input name="p7" type="radio" value="b"/>
+                                        b
+                                        <input name="p7" type="radio" value="c"/>
+                                        c
+                                        <input name="p7" type="radio" value="d"/>
+                                        d
+                                        <br>
+                                            <p>
+                                                a.) SOUND
+                                            </p>
+                                            <br>
+                                                <p>
+                                                    b.)BGSOUND
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        c.)AUDIO
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            d.)SOURCE
+                                                        </p>
+                                                    </br>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </label>
+                                    <br>
+                                        <label for="p8" id="rad7">
+                                            8. ¿ Qué definición de DOCTYPE es la correcta para HTML5?
+                                            <input name="p8" type="radio" value="a"/>
+                                            a
+                                            <input name="p8" type="radio" value="b"/>
+                                            b
+                                            <input name="p8" type="radio" value="c"/>
+                                            c
+                                            <input name="p8" type="radio" value="d"/>
+                                            d
+                                            <br>
+                                                <p>
+                                                    a.)< !DOCTYPE html PUBLIC "-//W3C//DTD HTML 5 Transitional//EN" "http://www.w3.org/TR/html5/loose.dtd" >
+                                                </p>
+                                                <br>
+                                                    <p>
+                                                        b.)< !DOCTYPE html PUBLIC "-//W3C//DTD HTML 5 Strict//EN" "http://www.w3.org/TR/html5/strict.dtd" >
+                                                "
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            c.)< !DOCTYPE html>
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                d.)"< D-DOCTYPE html5 >"
+                                                            </p>
+                                                        </br>
+                                                    </br>
+                                                </br>
+                                            </br>
+                                        </label>
+                                        <br>
+                                            <label for="p9" id="rad8">
+                                                9. ¿Para qué sirve el atributo autoplay del elemento AUDIO?
+                                                <input name="p9" type="radio" value="a"/>
+                                                a
+                                                <input name="p9" type="radio" value="b"/>
+                                                b
+                                                <input name="p9" type="radio" value="c"/>
+                                                c
+                                                <input name="p9" type="radio" value="d"/>
+                                                d
+                                                <br>
+                                                    <p>
+                                                        a.) Muestra un panel para gestionar el sonido
+                                                    </p>
+                                                    <br>
+                                                        <p>
+                                                            b.)No existe el atributo autoplay en HTML5
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                c.)Permite reproducir música de forma infinita
+                                                            </p>
+                                                            <br>
+                                                                <p>
+                                                                    d.)Permite iniciar la música de forma automática
+                                                                </p>
+                                                            </br>
+                                                        </br>
+                                                    </br>
+                                                </br>
+                                            </label>
+                                            <br>
+                                                <label for="p10" id="rad9">
+                                                    10. ¿Con que etiqueta HTML5 armarías el menú de navegación de un sitio?
+                                                    <input name="p10" type="radio" value="a"/>
+                                                    a
+                                                    <input name="p10" type="radio" value="b"/>
+                                                    b
+                                                    <input name="p10" type="radio" value="c"/>
+                                                    c
+                                                    <input name="p10" type="radio" value="d"/>
+                                                    d
+                                                    <br>
+                                                        <p>
+                                                            a.) < section >
+                                                        </p>
+                                                        <br>
+                                                            <p>
+                                                                b.)< menu >
+                                                            </p>
+                                                            <br>
+                                                                <p>
+                                                                    c.)< nav >
+                                                                </p>
+                                                                <br>
+                                                                    <p>
+                                                                        d.)< dir >
+                                                                    </p>
+                                                                </br>
+                                                            </br>
+                                                        </br>
+                                                    </br>
+                                                </label>
+                                                <br>
+                                                    <div id="nivel">
+                                                    </div>
+                                                    <input onclick="fnc()" type="button" value="comprobar"/>
+                                                    <br/>
+                                                </br>
+                                            </br>
+                                        </br>
+                                    </br>
+                                </br>
+                            </br>
+                        </form>
+
+</body>
+</html>
